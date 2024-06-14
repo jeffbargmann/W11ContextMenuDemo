@@ -21,7 +21,7 @@ New-SelfSignedCertificate -Type Custom -Subject "CN=Contoso" -KeyUsage DigitalSi
 ### Export the Cert to a PFX file
 ```
 $password = ConvertTo-SecureString -String <YOUR PASSWORD> -Force -AsPlainText 
-Export-PfxCertificate -cert "Cert:\CurrentUser\My\<Certificate Thumbprint>" -FilePath <FilePath>.pfx -Password $password
+Export-PfxCertificate -cert "Cert:\CurrentUser\My\<Certificate Thumbprint>" -FilePath "C:\src\MyPFX.pfx" -Password $password
 ```
 ### Make an MSIX Package
 In a CMD window:
