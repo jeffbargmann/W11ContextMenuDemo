@@ -26,7 +26,7 @@ Export-PfxCertificate -cert "Cert:\CurrentUser\My\<Certificate Thumbprint>" -Fil
 ### Make an MSIX Package
 In a CMD window:
 ```
-"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\makeappx.exe" pack /d C:\src\AppModelSamples-master\Samples\SparsePackages\ContextMenuRegistrationPkg /p "C:\src\mypackage.msix" /nv
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\makeappx.exe" pack /d C:\src\W11ContextMenuDemo\ContextMenuRegistrationPkg /p "C:\src\mypackage.msix" /nv
 ```
 ### Sign the MSIX Package
 ```
